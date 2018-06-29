@@ -1,3 +1,3 @@
 class College < ApplicationRecord
-  has_many :acapella_groups
+  has_many :a_cappella_groups
 end

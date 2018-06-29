@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 College.destroy_all
-AcapellaGroup.destroy_all
+ACappellaGroup.destroy_all
 
 colleges = [
   {
@@ -213,4 +213,4 @@ groups = [
     college_id: 16
   }
 ]
-AcapellaGroup.create(groups)
+ACappellaGroup.create(groups)

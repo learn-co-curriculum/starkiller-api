@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :acapella_groups
+  resources :a_cappella_groups
   resources :colleges
 
   root to: "application#index"

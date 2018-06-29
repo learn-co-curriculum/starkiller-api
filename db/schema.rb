@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 2018_06_29_183132) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "acapella_groups", force: :cascade do |t|
+  create_table "a_cappella_groups", force: :cascade do |t|
     t.string "name"
     t.string "membership"
     t.bigint "college_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["college_id"], name: "index_acapella_groups_on_college_id"
+    t.index ["college_id"], name: "index_a_cappella_groups_on_college_id"
   end
 
   create_table "colleges", force: :cascade do |t|
@@ -32,5 +32,5 @@ ActiveRecord::Schema.define(version: 2018_06_29_183132) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "acapella_groups", "colleges"
+  add_foreign_key "a_cappella_groups", "colleges"
 end
