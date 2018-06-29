@@ -5,5 +5,5 @@
 The goal of this API is to provide multiple endpoints for students to practice fetching data from.
 
 Domains:
-- nah
-- more nah
+- College - has many AcapellaGroups. Attributes: name, state, division
+- AcapellaGroup - belongs to College. Attributes: name, membership, college_id
