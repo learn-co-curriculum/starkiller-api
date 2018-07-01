@@ -10,5 +10,5 @@ Domains:
 - ACappellaGroup: belongs to College
   - attributes: name, membership, college_id
   
-- Task_Lite
+- Task
   - attributes: description 
