@@ -5,7 +5,10 @@
 The goal of this API is to provide multiple endpoints for students to practice fetching data from.
 
 Domains:
-- College: has many AcappellaGroups
+- College: has many ACappellaGroups
   - attributes: name, state, division
-- AcappellaGroup: belongs to College
+- ACappellaGroup: belongs to College
   - attributes: name, membership, college_id
+  
+- Task_Lite
+  - attributes: description 
