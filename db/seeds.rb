@@ -5,212 +5,229 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-College.destroy_all
 ACappellaGroup.destroy_all
+College.destroy_all
 
 colleges = [
   {
     name: "University of Southern California",
     state: "CA",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+    {
+      name: "SoCal VoCals",
+      membership: "mixed"
+    }, {
+      name: "Sirens",
+      membership: "soprano/alto"
+    }
+  ])
   }, {
     name: "University of Michigan",
     state: "MI",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Amazin' Blue",
+        membership: "mixed"
+      }, {
+        name: "Dicks and Janes",
+        membership: "mixed"
+      }
+    ])
   }, {
     name: "University of Pennsylvania",
     state: "PA",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Off the Beat",
+        membership: "mixed"
+      }, {
+        name: "Counterparts",
+        membership: "mixed"
+      }
+    ])
   }, {
     name: "Tufts University",
     state: "MA",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Amalgamates",
+        membership: "mixed"
+      }, {
+        name: "Beelzebubs",
+        membership: "tenor/bass"
+      }
+    ])
   }, {
     name: "University of North Carolina at Chapel Hill",
     state: "NC",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Loreleis",
+        membership: "soprano/alto"
+      },
+      {
+        name: "Cadence",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "University of California, Berkeley",
     state: "CA",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Men's Octet",
+        membership: "tenor/bass"
+      }, {
+        name: "California Golden Overtones",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "University of California, Los Angeles",
     state: "CA",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Awaken A Cappella",
+        membership: "mixed"
+      }
+    ])
   }, {
     name: "University of Oregon",
     state: "OR",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "On the Rocks",
+        membership: "tenor/bass"
+      }, {
+        name: "Divisi",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "Duke University",
     state: "NC",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Out of the Blue",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "University of Virginia",
     state: "VA",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Hullabahoos",
+        membership: "tenor/bass"
+      }, {
+        name: "Sil'hooettes",
+        membership: "soprano/alto"
+      }, {
+        name: "Academical Village People",
+        membership: "tenor/bass"
+      }
+    ])
   }, {
     name: "Dartmouth",
     state: "NH",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Aires",
+        membership: "tenor/bass"
+      }, {
+        name: "Dodecaphonics",
+        membership: "mixed"
+      }
+    ])
   }, {
     name: "Brown",
     state: "RI",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Derbies",
+        membership: "tenor/bass"
+      }
+    ])
   }, {
     name: "Brigham Young University",
     state: "UT",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Vocal Point",
+        membership: "tenor/bass"
+      }, {
+        name: "Noteworthy",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "Stanford University",
     state: "CA",
-    division: "West"
+    division: "West",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Everyday People",
+        membership: "mixed"
+      }, {
+        name: "Mixed Company",
+        membership: "mixed"
+      }, {
+        name: "Harmonics",
+        membership: "mixed"
+      }, {
+        name: "Mendicants",
+        membership: "tenor/bass"
+      }
+    ])
   }, {
     name: "Yale University",
     state: "CT",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Whiffenpoofs",
+        membership: "tenor/bass"
+      }
+    ])
   }, {
     name: "Smith College",
     state: "MA",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+        name: "Smiffenpoofs",
+        membership: "soprano/alto"
+      }
+    ])
   }, {
     name: "Massachusetts Institute of Technology",
     state: "MA",
-    division: "East"
+    division: "East",
+    a_cappella_groups: ACappellaGroup.create([
+      {
+       name: "Chorallaries",
+       membership: "mixed"
+     }, {
+       name: "Logarhythms",
+       membership: "tenor/bass"
+     }
+    ])
   }
 
 ]
 College.create(colleges)
 
-groups = [
-  {
-    name: "SoCal VoCals",
-    membership: "mixed",
-    college_id: 1
-  }, {
-    name: "Sirens",
-    membership: "soprano/alto",
-    college_id: 1
-  }, {
-    name: "Amazin' Blue",
-    membership: "mixed",
-    college_id: 2
-  }, {
-    name: "Dicks and Janes",
-    membership: "mixed",
-    college_id: 2
-  }, {
-    name: "Off the Beat",
-    membership: "mixed",
-    college_id: 3
-  }, {
-    name: "Counterparts",
-    membership: "mixed",
-    college_id: 3
-  }, {
-    name: "Amalgamates",
-    membership: "mixed",
-    college_id: 4
-  }, {
-    name: "Beelzebubs",
-    membership: "tenor/bass",
-    college_id: 4
-  }, {
-    name: "Loreleis",
-    membership: "soprano/alto",
-    college_id: 5
-  }, {
-    name: "Cadence",
-    membership: "soprano/alto",
-    college_id: 5
-  }, {
-    name: "Men's Octet",
-    membership: "tenor/bass",
-    college_id: 6
-  }, {
-    name: "California Golden Overtones",
-    membership: "soprano/alto",
-    college_id: 6
-  }, {
-    name: "Awaken A Cappella",
-    membership: "mixed",
-    college_id: 7
-  }, {
-    name: "On the Rocks",
-    membership: "tenor/bass",
-    college_id: 8
-  }, {
-    name: "Divisi",
-    membership: "soprano/alto",
-    college_id: 8
-  }, {
-    name: "Out of the Blue",
-    membership: "soprano/alto",
-    college_id: 9
-  }, {
-    name: "Hullabahoos",
-    membership: "tenor/bass",
-    college_id: 10
-  }, {
-    name: "Sil'hooettes",
-    membership: "soprano/alto",
-    college_id: 10
-  }, {
-    name: "Academical Village People",
-    membership: "tenor/bass",
-    college_id: 10
-  }, {
-    name: "Aires",
-    membership: "tenor/bass",
-    college_id: 11
-  }, {
-    name: "Dodecaphonics",
-    membership: "mixed",
-    college_id: 11
-  }, {
-    name: "Derbies",
-    membership: "tenor/bass",
-    college_id: 12
-  }, {
-    name: "Vocal Point",
-    membership: "tenor/bass",
-    college_id: 13
-  }, {
-    name: "Noteworthy",
-    membership: "soprano/alto",
-    college_id: 13
-  }, {
-    name: "Everyday People",
-    membership: "mixed",
-    college_id: 14
-  }, {
-    name: "Mixed Company",
-    membership: "mixed",
-    college_id: 14
-  }, {
-    name: "Harmonics",
-    membership: "mixed",
-    college_id: 14
-  }, {
-    name: "Mendicants",
-    membership: "tenor/bass",
-    college_id: 14
-  }, {
-    name: "Whiffenpoofs",
-    membership: "tenor/bass",
-    college_id: 14
-  }, {
-    name: "Smiffenpoofs",
-    membership: "soprano/alto",
-    college_id: 15
-  }, {
-    name: "Chorallaries",
-    membership: "mixed",
-    college_id: 16
-  }, {
-    name: "Logarhythms",
-    membership: "tenor/bass",
-    college_id: 16
-  }
-]
-ACappellaGroup.create(groups)
+
