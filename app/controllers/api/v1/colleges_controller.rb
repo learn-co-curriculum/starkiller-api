@@ -1,4 +1,4 @@
-class CollegesController < ApplicationController
+class Api::V1::CollegesController < ApplicationController
   before_action :set_college, only: [:show, :update, :destroy]
 
   # GET /colleges

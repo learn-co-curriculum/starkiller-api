@@ -1,4 +1,4 @@
-class ACappellaGroupsController < ApplicationController
+class Api::V1::ACappellaGroupsController < ApplicationController
   before_action :set_a_cappella_group, only: [:show, :update, :destroy]
 
   # GET /a_cappella_groups
