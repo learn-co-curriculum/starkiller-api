@@ -9,6 +9,4 @@ Domains:
   - attributes: name, state, division
 - ACappellaGroup: belongs to College
   - attributes: name, membership, college_id
-  
-- Task_Lite
-  - attributes: description 
+
