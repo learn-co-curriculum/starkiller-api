@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ACappellaGroup.destroy_all
 College.destroy_all
+Dog.destroy_all
 
 colleges = [
   {
@@ -229,5 +230,9 @@ colleges = [
 
 ]
 College.create(colleges)
+
+20.times do
+  Dog.create(name: Faker::Dog.name, breed: Faker::Dog.breed, gender: Faker::Dog.gender)
+end
 
 
