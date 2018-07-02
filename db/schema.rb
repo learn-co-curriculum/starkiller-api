@@ -40,5 +40,11 @@ ActiveRecord::Schema.define(version: 2018_07_02_203733) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "a_cappella_groups", "colleges"
 end
